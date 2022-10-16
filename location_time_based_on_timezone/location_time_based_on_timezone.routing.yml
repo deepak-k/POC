@@ -1,0 +1,7 @@
+location_time_based_on_timezone.set_location_timezone:
+  path: "/admin/config/set-timezone"
+  defaults:
+    _title: "Admin form for setting country, city and timezone"
+    _form: '\Drupal\location_time_based_on_timezone\Form\AdminTimezoneSettingsForm'
+  requirements:
+    _permission: "administer site configuration"
