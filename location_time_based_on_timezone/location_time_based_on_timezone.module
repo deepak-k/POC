@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains location_time_based_on_timezone.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function location_time_based_on_timezone_theme($existing, $type, $theme, $path) {
+  return [
+    // Template file for Current time based on timezone Block.
+    'current_time_based_on_timezone_block' => [
+      'path' => $path . '/templates',
+      'template' => 'current-time-based-on-timezone-block',
+      'variables' => [
+        'country' => NULL,
+        'city' => NULL,
+        'current_time' => NULL,
+      ],
+    ],
+  ];
+}

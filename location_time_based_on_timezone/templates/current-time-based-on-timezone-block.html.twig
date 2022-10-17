@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * current_time : current time on the basis of timezone.
+ * country: This is coming from the country name field of configuration form.
+ * city : This is coming from the city name field of configuration form.
+ */
+#}
+
+<div style="font-size: 20px; font-weight: bold;">{{ current_time }}</div>
+<div class="location">Time {{ country }} {{ city }} </div>
+
