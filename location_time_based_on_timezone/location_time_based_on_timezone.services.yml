@@ -1,0 +1,4 @@
+services:
+  location_time_based_on_timezone.current_time_service:
+    class: Drupal\location_time_based_on_timezone\CurrentTimeBasedOnTimezoneService
+    arguments: ["@datetime.time", "@config.factory"]
